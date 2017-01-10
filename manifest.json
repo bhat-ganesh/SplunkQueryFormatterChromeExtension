@@ -2,22 +2,16 @@
     "manifest_version": 2,
     "version": "0.0.1",
     "name": "Splunk Query Formatter",
+    "author": "bhatganesh@gmail.com",
     "description": "One click to format Splunk query",
      "browser_action": {
-        "default_title": "Format splunk query",
-        //"default_popup": "sqf.html",
-        "default_icon": "images/icon.png",
-        "name": "Click to format splunk query"
+        "default_icon": "images/icon.png"
     },
-    // "content_scripts": [
-    //     {
-    //     "matches": ["https://www.stb.bskyb.com/splunk/*"],
-    //     "js": ["sqf.js"],
-    //     "run_at": "document_end"
-    //     }
-    // ]
     "background":{
             "scripts":["background.js"]
         },
-    "permissions":["https://www.stb.bskyb.com/splunk/*search*"]
+    "permissions":[
+        "https://*/splunk/*search*",
+        "https://www.splunk.com/*search*"
+        ]
 }
