@@ -5,7 +5,7 @@
     "author": "bhatganesh@gmail.com",
     "description": "One click to format Splunk query",
      "browser_action": {
-        "default_icon": "images/icon.png"
+        "default_icon": "images/sqf.png"
     },
     "background":{
             "scripts":["/js/background.js"]
