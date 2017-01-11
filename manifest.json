@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "version": "0.0.2",
+    "version": "0.0.3",
     "name": "Splunk Query Formatter",
     "author": "bhatganesh@gmail.com",
     "description": "One click to format Splunk query",
