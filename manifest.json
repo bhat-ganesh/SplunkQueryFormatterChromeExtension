@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "version": "0.0.3",
+    "version": "0.0.4",
     "name": "Splunk Query Formatter",
     "author": "bhatganesh@gmail.com",
     "description": "One click to format Splunk query",
@@ -11,7 +11,7 @@
             "scripts":["/js/background.js"]
         },
     "permissions":[
-        "https://*/splunk/*search*",
-        "https://www.splunk.com/*search*"
+        "https://*/splunk/*",
+        "https://www.splunk.com/*"
         ]
 }
