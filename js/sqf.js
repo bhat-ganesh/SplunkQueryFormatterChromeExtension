@@ -1,13 +1,11 @@
-if(document.getElementsByName("q")[0]) {
-    document.getElementsByName("q")[0].value = document.getElementsByName("q")[0].value.replace(new RegExp("\\|", "g"), "\n\|");
-    document.getElementsByName("q")[0].value = document.getElementsByName("q")[0].value.replace(new RegExp(" +", "g"), " ");
-    document.getElementsByName("q")[0].value = document.getElementsByName("q")[0].value.replace(new RegExp("\\| join ", "g"), "\n\| join ");
-    document.getElementsByName("q")[0].value = document.getElementsByName("q")[0].value.replace(new RegExp("\\] ", "g"), "\] \n");
+var ele = document.getElementsByName("q")[0];
+if (!ele) {
+    ele = document.getElementsByName("search")[0];
 }
 
-if(document.getElementsByName("search")[0]) {
-    document.getElementsByName("search")[0].value = document.getElementsByName("search")[0].value.replace(new RegExp("\\|", "g"), "\n\|");
-    document.getElementsByName("search")[0].value = document.getElementsByName("search")[0].value.replace(new RegExp(" +", "g"), " ");
-    document.getElementsByName("search")[0].value = document.getElementsByName("search")[0].value.replace(new RegExp("\\| join ", "g"), "\n\| join ");
-    document.getElementsByName("search")[0].value = document.getElementsByName("search")[0].value.replace(new RegExp("\\] ", "g"), "\] \n");
+if(ele) {
+    ele.value = ele.value.replace(new RegExp("\\|", "g"), "\n\|");
+    ele.value = ele.value.replace(new RegExp(" +", "g"), " ");
+    ele.value = ele.value.replace(new RegExp("\\| join ", "g"), "\n\| join ");
+    ele.value = ele.value.replace(new RegExp("\\] ", "g"), "\] \n");
 }
